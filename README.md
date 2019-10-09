@@ -1,8 +1,14 @@
 # WhitePandaTask
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+
+## Sorry!! My Project was based on Angular and due to some issues it was not deploying on github-pages, so at last I deployed it on google firebase.
+
+## HOISTING URL : https://fir-learning-9441c.firebaseapp.com/
 
 ## Development server
+
+## npm install
+## ng serve --open
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
