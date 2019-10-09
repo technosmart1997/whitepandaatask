@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+
+<div style="padding :0px 25px " class="container">
+  <div class="page-header">
+    <h1 id="main_heading">
+      Content Store
+    </h1>
+  </div>
+  <div class="jumbotron">
+    <h4 id="jumbotron_subtitle">
+      Got bulk orders or almost similar orders ? Fill the order brief in excel
+      sheet
+    </h4>
+    <br />
+    <p id="jumbotron_content">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged.
+    </p>
+    <br />
+    <div class="row">
+      <div class="col-md-3">
+        <button class="btn btn-primary btn-block">
+          Order via Excel Sheet
+        </button>
+      </div>
+    </div>
+  </div>
+  <p>
+    <br />
+  </p>
+  <div class="row">
+    <div
+      style="margin-bottom: 40px;"
+      class="col-md-4"
+      *ngFor="let task of tasks"
+    >
+      <app-task [task]="task.payload.doc.data()"></app-task>
+      <!-- #fdfefe -->
+      <!-- <div class="well well-lg">
+        <div class="row" style="min-height: 90px;">
+          <div id="title" class="col-md-3">
+            <div class="overhead"></div>
+            <img
+              style="height: 60px;width: 60px;border-radius: 100%"
+              src="https://www.seekpng.com/png/detail/127-1278004_icons-education-education-icon-purple.png"
+            />
+          </div>
+          <div class="col-md-9">
+            <h4 class="title">
+              {{ task.payload.doc.data().title }}
+            </h4>
+
+            <span style="font-size: 15px;color : grey">
+              from &#8377; {{ task.payload.doc.data().price }}</span
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p class="description">
+              {{ task.payload.doc.data().description.substr(0, 120) + "..." }}
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-6">
+            <button class="btn btn-primary btn-block">
+              Order
+            </button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</div>

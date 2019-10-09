@@ -1,0 +1,24 @@
+.navbar {
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0px 2px 2px #eee;
+}
+
+#name {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  background-color: #50c878;
+  color: #fff;
+  display: table;
+}
+
+#name_id {
+  font-size: 16px;
+  font-weight: 500;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
